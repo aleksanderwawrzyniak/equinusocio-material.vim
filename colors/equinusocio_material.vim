@@ -147,7 +147,7 @@ call s:HL('Statement', s:colors.magenta, s:colors.none, s:colors.none)
 call s:HL('Conditional', s:colors.cyan, s:colors.none, s:colors.none)
 call s:HL('Repeat', s:colors.cyan, s:colors.none, s:colors.none)
 call s:HL('Operator', s:colors.magenta, s:colors.none, s:colors.none)
-call s:HL('Keyword', s:colors.purple, s:colors.none, s:colors.none)
+call s:HL('Keyword', s:colors.magenta, s:colors.none, s:colors.none)
 call s:HL('Exception', s:colors.cyan, s:colors.none, s:colors.none)
 " ----------------------------------------------------
 call s:HL('PreProc', s:colors.cyan, s:colors.none, s:colors.none)
@@ -319,10 +319,12 @@ call s:HL('rustQuestionMark', s:colors.red, s:colors.none, s:colors.none)
 " ====================================================
 " GitGutter
 " ----------------------------------------------------
-call s:HL('GitGutterAdd', s:colors.green, s.colors.none, s:colors.none)
-call s:HL('GitGutterChange', s:colors.yellow, s.colors.none, s:colors.none)
-call s:HL('GitGutterChangeDelete', s:colors.orange, s.colors.none, s:colors.none)
-call s:HL('GitGutterDelete', s:colors.red, s.colors.none, s:colors.none)
+call s:HL('GitGutterAdd', s:colors.green, s:colors.none, s:colors.none)
+call s:HL('GitGutterChange', s:colors.yellow, s:colors.none, s:colors.none)
+call s:HL('GitGutterChangeDelete', s:colors.orange, s:colors.none, s:colors.none)
+call s:HL('GitGutterDelete', s:colors.red, s:colors.none, s:colors.none)
+" ===================================================
+
 " ====================================================
 " vim8/neovim buildin terminal colors
 " ----------------------------------------------------
