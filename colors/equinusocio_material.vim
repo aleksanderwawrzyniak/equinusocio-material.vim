@@ -147,7 +147,7 @@ call s:HL('Statement', s:colors.magenta, s:colors.none, s:colors.none)
 call s:HL('Conditional', s:colors.cyan, s:colors.none, s:colors.none)
 call s:HL('Repeat', s:colors.cyan, s:colors.none, s:colors.none)
 call s:HL('Operator', s:colors.magenta, s:colors.none, s:colors.none)
-call s:HL('Keyword', s:colors.magenta, s:colors.none, s:colors.none)
+call s:HL('Keyword', s:colors.purple, s:colors.none, s:colors.none)
 call s:HL('Exception', s:colors.cyan, s:colors.none, s:colors.none)
 " ----------------------------------------------------
 call s:HL('PreProc', s:colors.cyan, s:colors.none, s:colors.none)
@@ -195,14 +195,14 @@ call s:HL('EchoDocPopup', s:colors.foreground, s:colors.float_bg, s:colors.none)
 " coc.nvim
 " ----------------------------------------------------
 call s:HL('CocErrorSign', s:colors.red, s:colors.none, s:colors.none)
-call s:HL('CocWarningSign', s:colors.yellow, s:colors.none, s:colors.none)
-call s:HL('CocInfoSign', s:colors.orange, s:colors.none, s:colors.none)
+call s:HL('CocWarningSign', s:colors.orange, s:colors.none, s:colors.none)
+call s:HL('CocInfoSign', s:colors.yellow, s:colors.none, s:colors.none)
 call s:HL('CocHintSign', s:colors.cyan, s:colors.none, s:colors.none)
 
 call s:HL('CocFloating', s:colors.foreground, s:colors.float_bg, s:colors.none)
 call s:HL('CocErrorFloat', s:colors.red, s:colors.float_bg, s:colors.none)
-call s:HL('CocWarningFloat', s:colors.yellow, s:colors.float_bg, s:colors.none)
-call s:HL('CocInfoFloat', s:colors.orange, s:colors.float_bg, s:colors.none)
+call s:HL('CocWarningFloat', s:colors.orange, s:colors.float_bg, s:colors.none)
+call s:HL('CocInfoFloat', s:colors.yellow, s:colors.float_bg, s:colors.none)
 call s:HL('CocHintFloat', s:colors.cyan, s:colors.float_bg, s:colors.none)
 
 " --- not found in coc.nvim doc ---
@@ -306,6 +306,23 @@ endif
 " endif
 " ====================================================
 
+" ====================================================
+" rust
+" ----------------------------------------------------
+call s:HL('rustPanic', s:colors.red, s:colors.none, s:colors.none)
+call s:HL('rustAsync', s:colors.red, s:colors.none, s:colors.none)
+call s:HL('rustAwait', s:colors.red, s:colors.none, s:colors.none)
+call s:HL('rustSelf', s:colors.orange, s:colors.none, s:colors.none)
+call s:HL('rustQuestionMark', s:colors.red, s:colors.none, s:colors.none)
+" ====================================================
+
+" ====================================================
+" GitGutter
+" ----------------------------------------------------
+call s:HL('GitGutterAdd', s:colors.green, s.colors.none, s:colors.none)
+call s:HL('GitGutterChange', s:colors.yellow, s.colors.none, s:colors.none)
+call s:HL('GitGutterChangeDelete', s:colors.orange, s.colors.none, s:colors.none)
+call s:HL('GitGutterDelete', s:colors.red, s.colors.none, s:colors.none)
 " ====================================================
 " vim8/neovim buildin terminal colors
 " ----------------------------------------------------
